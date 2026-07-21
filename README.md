@@ -2,6 +2,10 @@
 
 MessageVault is a private, offline macOS 14+ exporter for the locally available Apple Messages library. It creates a searchable HTML archive alongside original attachments, a versioned JSON manifest, and SHA-256 checksums.
 
+[**Download the latest signed and notarized macOS build**](https://github.com/ScottPhillips/MessageVault/releases/latest/download/MessageVault-macOS.zip)
+
+Requires macOS 14 or later. The universal build supports Apple silicon and Intel Macs. Previous versions and release notes are available on the [Releases page](https://github.com/ScottPhillips/MessageVault/releases).
+
 MessageVault checks the public GitHub Releases endpoint at most once per day and when **Check for Updates…** is selected. No message, contact, export, or usage data is transmitted.
 
 ## Build
@@ -26,7 +30,7 @@ For Developer ID signing without submission, run `scripts/release-notarized.sh -
 
 ## Privacy and compatibility
 
-- MessageVault performs no network requests and includes no analytics.
+- MessageVault connects only to GitHub's public Releases API for update checks and includes no analytics.
 - It opens the Messages SQLite database read-only and never alters messages or attachments.
 - Contacts access is optional and only resolves addresses to display names.
 - Apple provides no public Messages export API. The local schema is undocumented and may change; unsupported schemas fail closed with a diagnostic.
