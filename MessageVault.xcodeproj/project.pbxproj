@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D4A6C803EB12D17B7BE0C1B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A59003A8E9197BABD776E8 /* ContentView.swift */; };
+		18A30F5D243C176F096FB890 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5421681B5F025E741C2CBA8D /* AppModel.swift */; };
+		2C4D698D2E2E34E5FED71CD6 /* UpdateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76C9B7F418818B27EE5DF33 /* UpdateService.swift */; };
+		4188BF67E69F7B9932BD37D5 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C05325A2BA4067EE03BA6A /* libsqlite3.tbd */; };
+		5A577BAE401A81D6A9929569 /* MessageVaultApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4864061BF3AB2B7734EEABD5 /* MessageVaultApp.swift */; };
+		699F7328050FCB38E5637DC7 /* ContactResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C749F9D80C1568ADC4FD0C6F /* ContactResolver.swift */; };
+		7D78BF327F067FD0256F3BC1 /* MessageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4610C7E84830298432773BC /* MessageStore.swift */; };
+		96AE6C8BB804EAD87A1DD582 /* SQLiteDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2892CE0115FD855A0737F2 /* SQLiteDatabase.swift */; };
+		A8393ABE78935C95EE1EEFC5 /* MessageVaultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233706A16A382AA9C569EE02 /* MessageVaultTests.swift */; };
+		D72F0B4C1A04921D43273BE5 /* ArchiveExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977FB505C4BE869D331BDEA0 /* ArchiveExporter.swift */; };
+		FB60C17B1002C9D75C73AC01 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33099E24C84DFC9E47D9DB4D /* Models.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6224705B7E03E02911525EE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7775B84DB55F5281E462A066 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A803335CE5D758EFB913919D;
+			remoteInfo = MessageVault;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		233706A16A382AA9C569EE02 /* MessageVaultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageVaultTests.swift; sourceTree = "<group>"; };
+		31A59003A8E9197BABD776E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		33099E24C84DFC9E47D9DB4D /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		4864061BF3AB2B7734EEABD5 /* MessageVaultApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageVaultApp.swift; sourceTree = "<group>"; };
+		5421681B5F025E741C2CBA8D /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		766398F12CE7A56FC625912C /* MessageVault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessageVault.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		856020486631AC3BF9489F63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		858AE9F9D264A4DF45FF1C6C /* MessageVault.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MessageVault.entitlements; sourceTree = "<group>"; };
+		977FB505C4BE869D331BDEA0 /* ArchiveExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveExporter.swift; sourceTree = "<group>"; };
+		A5C05325A2BA4067EE03BA6A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		C4610C7E84830298432773BC /* MessageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageStore.swift; sourceTree = "<group>"; };
+		C749F9D80C1568ADC4FD0C6F /* ContactResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactResolver.swift; sourceTree = "<group>"; };
+		DA2892CE0115FD855A0737F2 /* SQLiteDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDatabase.swift; sourceTree = "<group>"; };
+		F76C9B7F418818B27EE5DF33 /* UpdateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateService.swift; sourceTree = "<group>"; };
+		F79DA193118254C81C3213A1 /* MessageVaultTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessageVaultTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC0A28E04E4EB824E3B9DACC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4188BF67E69F7B9932BD37D5 /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FADA257075D1B6A9D844D60 /* MessageVaultTests */ = {
+			isa = PBXGroup;
+			children = (
+				233706A16A382AA9C569EE02 /* MessageVaultTests.swift */,
+			);
+			name = MessageVaultTests;
+			path = Tests/MessageVaultTests;
+			sourceTree = "<group>";
+		};
+		266628E427AD2912CC7A5947 = {
+			isa = PBXGroup;
+			children = (
+				29CEE96FC355CC2C661CBDC1 /* MessageVault */,
+				1FADA257075D1B6A9D844D60 /* MessageVaultTests */,
+				4D73DAFF41F46CE73C52A39E /* Frameworks */,
+				A18566663BC7302512F79141 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		29CEE96FC355CC2C661CBDC1 /* MessageVault */ = {
+			isa = PBXGroup;
+			children = (
+				5421681B5F025E741C2CBA8D /* AppModel.swift */,
+				977FB505C4BE869D331BDEA0 /* ArchiveExporter.swift */,
+				C749F9D80C1568ADC4FD0C6F /* ContactResolver.swift */,
+				31A59003A8E9197BABD776E8 /* ContentView.swift */,
+				856020486631AC3BF9489F63 /* Info.plist */,
+				C4610C7E84830298432773BC /* MessageStore.swift */,
+				858AE9F9D264A4DF45FF1C6C /* MessageVault.entitlements */,
+				4864061BF3AB2B7734EEABD5 /* MessageVaultApp.swift */,
+				33099E24C84DFC9E47D9DB4D /* Models.swift */,
+				DA2892CE0115FD855A0737F2 /* SQLiteDatabase.swift */,
+				F76C9B7F418818B27EE5DF33 /* UpdateService.swift */,
+			);
+			name = MessageVault;
+			path = Sources/MessageVault;
+			sourceTree = "<group>";
+		};
+		4D73DAFF41F46CE73C52A39E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5C05325A2BA4067EE03BA6A /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A18566663BC7302512F79141 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				766398F12CE7A56FC625912C /* MessageVault.app */,
+				F79DA193118254C81C3213A1 /* MessageVaultTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A803335CE5D758EFB913919D /* MessageVault */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33F73764C830EE770C7060FA /* Build configuration list for PBXNativeTarget "MessageVault" */;
+			buildPhases = (
+				1849DF7374B44E734409A1C3 /* Sources */,
+				FC0A28E04E4EB824E3B9DACC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MessageVault;
+			packageProductDependencies = (
+			);
+			productName = MessageVault;
+			productReference = 766398F12CE7A56FC625912C /* MessageVault.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C2568EEF8E7C9E4F0B4374A4 /* MessageVaultTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 589E9C8FE30821AEA95D4FC6 /* Build configuration list for PBXNativeTarget "MessageVaultTests" */;
+			buildPhases = (
+				F81AF3F6ACFB9E7D971B73D7 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46A65E918E02E45D586BEC9E /* PBXTargetDependency */,
+			);
+			name = MessageVaultTests;
+			packageProductDependencies = (
+			);
+			productName = MessageVaultTests;
+			productReference = F79DA193118254C81C3213A1 /* MessageVaultTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7775B84DB55F5281E462A066 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = FC939B5DEF77A07CCEADACDF /* Build configuration list for PBXProject "MessageVault" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 266628E427AD2912CC7A5947;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A18566663BC7302512F79141 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A803335CE5D758EFB913919D /* MessageVault */,
+				C2568EEF8E7C9E4F0B4374A4 /* MessageVaultTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1849DF7374B44E734409A1C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A30F5D243C176F096FB890 /* AppModel.swift in Sources */,
+				D72F0B4C1A04921D43273BE5 /* ArchiveExporter.swift in Sources */,
+				699F7328050FCB38E5637DC7 /* ContactResolver.swift in Sources */,
+				0D4A6C803EB12D17B7BE0C1B /* ContentView.swift in Sources */,
+				7D78BF327F067FD0256F3BC1 /* MessageStore.swift in Sources */,
+				5A577BAE401A81D6A9929569 /* MessageVaultApp.swift in Sources */,
+				FB60C17B1002C9D75C73AC01 /* Models.swift in Sources */,
+				96AE6C8BB804EAD87A1DD582 /* SQLiteDatabase.swift in Sources */,
+				2C4D698D2E2E34E5FED71CD6 /* UpdateService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F81AF3F6ACFB9E7D971B73D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8393ABE78935C95EE1EEFC5 /* MessageVaultTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46A65E918E02E45D586BEC9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A803335CE5D758EFB913919D /* MessageVault */;
+			targetProxy = 6224705B7E03E02911525EE0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		169245128B0EF4EBD67893C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MessageVaultTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MessageVault.app/Contents/MacOS/MessageVault";
+			};
+			name = Release;
+		};
+		48693527A819B7DFBE5E49FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		AA3FCF97BDA680048A3A9965 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		BA76EA78EC5C909378B91FDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sources/MessageVault/MessageVault.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Sources/MessageVault/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.scottphillips.MessageVault;
+				PRODUCT_NAME = MessageVault;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BD1027B4F4FAEF9EF90B4D40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MessageVaultTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MessageVault.app/Contents/MacOS/MessageVault";
+			};
+			name = Debug;
+		};
+		C89C9226DFFB9E42D67EF898 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sources/MessageVault/MessageVault.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Sources/MessageVault/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.scottphillips.MessageVault;
+				PRODUCT_NAME = MessageVault;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33F73764C830EE770C7060FA /* Build configuration list for PBXNativeTarget "MessageVault" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA76EA78EC5C909378B91FDA /* Debug */,
+				C89C9226DFFB9E42D67EF898 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		589E9C8FE30821AEA95D4FC6 /* Build configuration list for PBXNativeTarget "MessageVaultTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD1027B4F4FAEF9EF90B4D40 /* Debug */,
+				169245128B0EF4EBD67893C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FC939B5DEF77A07CCEADACDF /* Build configuration list for PBXProject "MessageVault" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48693527A819B7DFBE5E49FE /* Debug */,
+				AA3FCF97BDA680048A3A9965 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7775B84DB55F5281E462A066 /* Project object */;
+}
