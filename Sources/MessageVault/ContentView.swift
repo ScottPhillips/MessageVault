@@ -1,3 +1,4 @@
+import AppKit
 import Contacts
 import SwiftUI
 
@@ -220,7 +221,10 @@ struct AboutView: View {
     @Environment(\.dismiss) private var dismiss
     var body: some View {
         VStack(spacing: 16) {
-            Image(systemName: "archivebox.fill").font(.system(size: 58)).foregroundStyle(.blue)
+            Image(nsImage: NSApplication.shared.applicationIconImage)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 96, height: 96)
             VStack(spacing: 5) { Text("MessageVault").font(.largeTitle.bold()); Text("Version \(AppModel.appVersion)").foregroundStyle(.secondary) }
             Text("A private, offline-first exporter for the Messages history stored on your Mac.").multilineTextAlignment(.center).frame(maxWidth: 390)
             Text("Message data never leaves your Mac. MessageVault connects to GitHub only to check for software updates when the app opens or when you request a check.").font(.caption).foregroundStyle(.secondary).multilineTextAlignment(.center).frame(maxWidth: 430)

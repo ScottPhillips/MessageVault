@@ -13,7 +13,7 @@ enum SidebarSort: String, CaseIterable, Identifiable {
 
 @MainActor
 final class AppModel: ObservableObject {
-    static let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.1.0"
+    static let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.2.0"
     @Published var snapshot: LibrarySnapshot?
     @Published var selectedPersonID: String?
     @Published var search = ""

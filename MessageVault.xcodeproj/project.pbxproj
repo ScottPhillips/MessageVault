@@ -10,6 +10,7 @@
 		0D4A6C803EB12D17B7BE0C1B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A59003A8E9197BABD776E8 /* ContentView.swift */; };
 		18A30F5D243C176F096FB890 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5421681B5F025E741C2CBA8D /* AppModel.swift */; };
 		2C4D698D2E2E34E5FED71CD6 /* UpdateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76C9B7F418818B27EE5DF33 /* UpdateService.swift */; };
+		3A5136AE2E45B3C9C4E16399 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64FE79A4B2C3491D74C7224A /* Assets.xcassets */; };
 		4188BF67E69F7B9932BD37D5 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C05325A2BA4067EE03BA6A /* libsqlite3.tbd */; };
 		5A577BAE401A81D6A9929569 /* MessageVaultApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4864061BF3AB2B7734EEABD5 /* MessageVaultApp.swift */; };
 		699F7328050FCB38E5637DC7 /* ContactResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C749F9D80C1568ADC4FD0C6F /* ContactResolver.swift */; };
@@ -36,6 +37,7 @@
 		33099E24C84DFC9E47D9DB4D /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		4864061BF3AB2B7734EEABD5 /* MessageVaultApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageVaultApp.swift; sourceTree = "<group>"; };
 		5421681B5F025E741C2CBA8D /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		64FE79A4B2C3491D74C7224A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		766398F12CE7A56FC625912C /* MessageVault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessageVault.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		856020486631AC3BF9489F63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		858AE9F9D264A4DF45FF1C6C /* MessageVault.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MessageVault.entitlements; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 			children = (
 				5421681B5F025E741C2CBA8D /* AppModel.swift */,
 				977FB505C4BE869D331BDEA0 /* ArchiveExporter.swift */,
+				64FE79A4B2C3491D74C7224A /* Assets.xcassets */,
 				C749F9D80C1568ADC4FD0C6F /* ContactResolver.swift */,
 				31A59003A8E9197BABD776E8 /* ContentView.swift */,
 				856020486631AC3BF9489F63 /* Info.plist */,
@@ -123,6 +126,7 @@
 			buildConfigurationList = 33F73764C830EE770C7060FA /* Build configuration list for PBXNativeTarget "MessageVault" */;
 			buildPhases = (
 				1849DF7374B44E734409A1C3 /* Sources */,
+				D038C72555FFB40CCE01EE8F /* Resources */,
 				FC0A28E04E4EB824E3B9DACC /* Frameworks */,
 			);
 			buildRules = (
@@ -184,6 +188,17 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D038C72555FFB40CCE01EE8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A5136AE2E45B3C9C4E16399 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1849DF7374B44E734409A1C3 /* Sources */ = {
